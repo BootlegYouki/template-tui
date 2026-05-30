@@ -1,0 +1,20 @@
+# Graphify Ignore File
+# Prevents binary files, dependencies, and outputs from bloating the knowledge graph
+
+.git/
+node_modules/
+dist/
+build/
+graphify-out/
+pnpm-lock.yaml
+package-lock.json
+.prettierrc
+.prettierignore
+eslint.config.js
+*.log
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.ico

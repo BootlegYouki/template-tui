@@ -1,0 +1,187 @@
+{
+  "E:\\Github\\template-tui\\components.json": {
+    "mtime": 1780117830.1313047,
+    "ast_hash": "795055f4f117f39c05e05671d1d2ff7b",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\template-tui\\package.json": {
+    "mtime": 1780117830.1323397,
+    "ast_hash": "7b267aa4c45063c803ac2bbfa0922bd8",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\template-tui\\tsconfig.app.json": {
+    "mtime": 1780073095.884,
+    "ast_hash": "30f69dfd8d129381ee28d4ccc45370d8",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\template-tui\\tsconfig.json": {
+    "mtime": 1780073095.884,
+    "ast_hash": "8f8d299e26b59b553cd694eb06cbea80",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\template-tui\\tsconfig.node.json": {
+    "mtime": 1780073095.885,
+    "ast_hash": "1cd4c6b260b0dccbad5bc0a25029f390",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\template-tui\\vite.config.ts": {
+    "mtime": 1780073095.885,
+    "ast_hash": "1c08667244f95c08569f47ce06e84702",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\template-tui\\src\\App.tsx": {
+    "mtime": 1780116875.9249039,
+    "ast_hash": "b42db5deb75a5b638d86bdb1ed4aaf3a",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\template-tui\\src\\main.tsx": {
+    "mtime": 1780073095.883,
+    "ast_hash": "6a91cd7148649a50841bc1e145c7553b",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\template-tui\\src\\components\\theme-provider.tsx": {
+    "mtime": 1780073095.882,
+    "ast_hash": "bb764a9e2cdc12b435aa85ccee797580",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\template-tui\\src\\components\\tui-template\\components-section.tsx": {
+    "mtime": 1780118027.029539,
+    "ast_hash": "8e6b6ca27dc464e94aa1ed3f622dc2e6",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\template-tui\\src\\components\\tui-template\\style-section.tsx": {
+    "mtime": 1780115195.6326697,
+    "ast_hash": "9df281883804535cd94e66ec3bf12154",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\template-tui\\src\\components\\tui-template\\tactical-widgets.tsx": {
+    "mtime": 1780116634.3172224,
+    "ast_hash": "19ee81404d140619e762f58572e8430a",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\template-tui\\src\\components\\tui-template\\telemetry-section.tsx": {
+    "mtime": 1780115971.3339415,
+    "ast_hash": "6dd3e21e0d99cf0597bd96a82e5371de",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\template-tui\\src\\components\\ui\\avatar.tsx": {
+    "mtime": 1780073263.431252,
+    "ast_hash": "73d5e18b7e1c8fc293947500b70283f6",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\template-tui\\src\\components\\ui\\badge.tsx": {
+    "mtime": 1780073263.1670141,
+    "ast_hash": "9038ac505f6f5ee1612c6fd356461cec",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\template-tui\\src\\components\\ui\\button.tsx": {
+    "mtime": 1780073128.9703715,
+    "ast_hash": "e5aa1e394a1974423e1487e25e844afb",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\template-tui\\src\\components\\ui\\card.tsx": {
+    "mtime": 1780073260.9443297,
+    "ast_hash": "759b889fb0a51762d07ea94d690740a4",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\template-tui\\src\\components\\ui\\chart.tsx": {
+    "mtime": 1780073695.4997284,
+    "ast_hash": "b62951d042d8be56f967bfcdf53da2ab",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\template-tui\\src\\components\\ui\\dialog.tsx": {
+    "mtime": 1780114050.7316153,
+    "ast_hash": "e971646d8799fc2ba5910b8c70986970",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\template-tui\\src\\components\\ui\\dropdown-menu.tsx": {
+    "mtime": 1780114520.4520547,
+    "ast_hash": "3157e326dd0104b00e6e6665470e1eb7",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\template-tui\\src\\components\\ui\\input.tsx": {
+    "mtime": 1780073261.572647,
+    "ast_hash": "dce2a71e73633480b1418287098e2bd5",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\template-tui\\src\\components\\ui\\label.tsx": {
+    "mtime": 1780073261.8304453,
+    "ast_hash": "dc7de19f773d134186cbb8cedf6034d5",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\template-tui\\src\\components\\ui\\select.tsx": {
+    "mtime": 1780073262.4142096,
+    "ast_hash": "ee15982cc3ccd16b6149725c4a780758",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\template-tui\\src\\components\\ui\\separator.tsx": {
+    "mtime": 1780073263.9915767,
+    "ast_hash": "1449ebdaae30a546b22655bd37adee9b",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\template-tui\\src\\components\\ui\\sheet.tsx": {
+    "mtime": 1780073264.7927127,
+    "ast_hash": "c693b99bb5a19eaca791b75dff94c100",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\template-tui\\src\\components\\ui\\skeleton.tsx": {
+    "mtime": 1780073263.7388508,
+    "ast_hash": "6c50fa0d8b1ee2bdf2af524a1ad86da5",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\template-tui\\src\\components\\ui\\tabs.tsx": {
+    "mtime": 1780073262.661165,
+    "ast_hash": "5ba41ac67ff2933e7504ea91718b0f77",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\template-tui\\src\\components\\ui\\textarea.tsx": {
+    "mtime": 1780073262.1055899,
+    "ast_hash": "3e0b0f1011bcb326471f8022ddee64f7",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\template-tui\\src\\components\\ui\\tooltip.tsx": {
+    "mtime": 1780113866.3365593,
+    "ast_hash": "3af46279ac7358fe58f168bbb0330c4d",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\template-tui\\src\\components\\ui\\tui-container.tsx": {
+    "mtime": 1780113509.1732955,
+    "ast_hash": "d7ecba12866dc46698a1c9428cdbac75",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\template-tui\\src\\lib\\utils.ts": {
+    "mtime": 1780073129.0058396,
+    "ast_hash": "5a6fd53fdcf2be529e9cc0b718fde352",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\template-tui\\CLAUDE.md": {
+    "mtime": 1780118211.3337064,
+    "ast_hash": "6d822051f4055ac642af8b122328e6e2",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\template-tui\\index.html": {
+    "mtime": 1780115303.0901248,
+    "ast_hash": "7f4f605c83afa5fcd9593ef2fb587f00",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\template-tui\\pnpm-workspace.yaml": {
+    "mtime": 1780073095.879,
+    "ast_hash": "fa141b2e20ae91011bec46d88ec38752",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\template-tui\\README.md": {
+    "mtime": 1780073095.878,
+    "ast_hash": "e82eb266e7be0e4dce9f19ab6f3f77f0",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\template-tui\\.agents\\rules\\graphify.md": {
+    "mtime": 1780118223.342865,
+    "ast_hash": "a0e4d192b9e2e17256124dbfc8e24e6a",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\template-tui\\.agents\\workflows\\graphify.md": {
+    "mtime": 1780118223.3438652,
+    "ast_hash": "637776aa6f7496d069afe7520c845c8a",
+    "semantic_hash": ""
+  }
+}

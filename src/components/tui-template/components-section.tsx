@@ -25,6 +25,60 @@ import {
   RiErrorWarningLine,
   RiTv2Line,
   RiTerminalBoxLine,
+  
+  // Navigation & UI Layout
+  RiHome2Line,
+  RiArrowRightLine,
+  RiArrowLeftLine,
+  RiArrowUpLine,
+  RiArrowDownLine,
+  RiArrowRightSLine,
+  RiArrowLeftSLine,
+  RiMenuLine,
+  RiRefreshLine,
+  
+  // Actions & Operations
+  RiSearchLine,
+  RiAddLine,
+  RiSubtractLine,
+  RiEditLine,
+  RiDeleteBinLine,
+  RiSaveLine,
+  RiShareLine,
+  RiDownloadLine,
+  RiUploadLine,
+  RiFileCopyLine,
+  RiCheckLine,
+  
+  // Communication & Social
+  RiMailLine,
+  RiPhoneLine,
+  RiMessageLine,
+  RiUserLine,
+  RiGithubFill,
+  RiTwitterFill,
+  RiGoogleFill,
+  RiNotificationLine,
+  
+  // Indicators & Overlays
+  RiInformationLine,
+  RiAlertLine,
+  RiCheckboxCircleLine,
+  RiHeartLine,
+  RiStarLine,
+  RiEyeLine,
+  RiEyeOffLine,
+  RiLockLine,
+  RiLockUnlockLine,
+  
+  // Files, folders & Media
+  RiFileTextLine,
+  RiFolderLine,
+  RiFolderOpenLine,
+  RiImageLine,
+  RiVideoLine,
+  RiVolumeUpLine,
+  RiCalendarLine,
 } from "@remixicon/react"
 
 export interface LogMessage {
@@ -33,6 +87,69 @@ export interface LogMessage {
   type: "ACTION" | "SYSTEM" | "WARN" | "SUCCESS"
   message: string
 }
+
+interface IconItem {
+  name: string
+  component: React.ComponentType<{ className?: string }>
+  category: "navigation" | "action" | "communication" | "status" | "file"
+  description: string
+}
+
+const ICON_LIST: IconItem[] = [
+  // Navigation
+  { name: "RiHome2Line", component: RiHome2Line, category: "navigation", description: "Home page/dashboard" },
+  { name: "RiArrowRightLine", component: RiArrowRightLine, category: "navigation", description: "Forward navigation" },
+  { name: "RiArrowLeftLine", component: RiArrowLeftLine, category: "navigation", description: "Back navigation" },
+  { name: "RiArrowUpLine", component: RiArrowUpLine, category: "navigation", description: "Upwards transition" },
+  { name: "RiArrowDownLine", component: RiArrowDownLine, category: "navigation", description: "Downwards transition" },
+  { name: "RiArrowRightSLine", component: RiArrowRightSLine, category: "navigation", description: "Accordion/next" },
+  { name: "RiArrowLeftSLine", component: RiArrowLeftSLine, category: "navigation", description: "Accordion/prev" },
+  { name: "RiMenuLine", component: RiMenuLine, category: "navigation", description: "Sidebar/menu toggle" },
+  { name: "RiRefreshLine", component: RiRefreshLine, category: "navigation", description: "Reload/reset state" },
+
+  // Actions
+  { name: "RiSearchLine", component: RiSearchLine, category: "action", description: "Filter or search inputs" },
+  { name: "RiAddLine", component: RiAddLine, category: "action", description: "Create/add item" },
+  { name: "RiSubtractLine", component: RiSubtractLine, category: "action", description: "Decrease/remove" },
+  { name: "RiEditLine", component: RiEditLine, category: "action", description: "Modify existing data" },
+  { name: "RiDeleteBinLine", component: RiDeleteBinLine, category: "action", description: "Delete/destroy" },
+  { name: "RiSaveLine", component: RiSaveLine, category: "action", description: "Commit changes" },
+  { name: "RiShareLine", component: RiShareLine, category: "action", description: "Export/share content" },
+  { name: "RiDownloadLine", component: RiDownloadLine, category: "action", description: "Fetch files/data" },
+  { name: "RiUploadLine", component: RiUploadLine, category: "action", description: "Send files/data" },
+  { name: "RiFileCopyLine", component: RiFileCopyLine, category: "action", description: "Copy to clipboard" },
+  { name: "RiCheckLine", component: RiCheckLine, category: "action", description: "Confirm/success" },
+
+  // Communication & Social
+  { name: "RiMailLine", component: RiMailLine, category: "communication", description: "Email/inbox" },
+  { name: "RiPhoneLine", component: RiPhoneLine, category: "communication", description: "Voice call/dial" },
+  { name: "RiMessageLine", component: RiMessageLine, category: "communication", description: "Chat/instant message" },
+  { name: "RiUserLine", component: RiUserLine, category: "communication", description: "User profile/identity" },
+  { name: "RiGithubFill", component: RiGithubFill, category: "communication", description: "Github social link" },
+  { name: "RiTwitterFill", component: RiTwitterFill, category: "communication", description: "Twitter social link" },
+  { name: "RiGoogleFill", component: RiGoogleFill, category: "communication", description: "Google authentication" },
+  { name: "RiNotificationLine", component: RiNotificationLine, category: "communication", description: "Alert bell" },
+
+  // Status & System
+  { name: "RiInformationLine", component: RiInformationLine, category: "status", description: "Info tooltip" },
+  { name: "RiAlertLine", component: RiAlertLine, category: "status", description: "Warning status banner" },
+  { name: "RiCheckboxCircleLine", component: RiCheckboxCircleLine, category: "status", description: "Verified status check" },
+  { name: "RiHeartLine", component: RiHeartLine, category: "status", description: "Favorite/like" },
+  { name: "RiStarLine", component: RiStarLine, category: "status", description: "Rating/star indicator" },
+  { name: "RiEyeLine", component: RiEyeLine, category: "status", description: "Show password/view" },
+  { name: "RiEyeOffLine", component: RiEyeOffLine, category: "status", description: "Hide password/private" },
+  { name: "RiLockLine", component: RiLockLine, category: "status", description: "Encrypted/secured" },
+  { name: "RiLockUnlockLine", component: RiLockUnlockLine, category: "status", description: "Decrypted/public" },
+
+  // Files & Folders
+  { name: "RiFileTextLine", component: RiFileTextLine, category: "file", description: "Document/text file" },
+  { name: "RiFolderLine", component: RiFolderLine, category: "file", description: "Directory path container" },
+  { name: "RiFolderOpenLine", component: RiFolderOpenLine, category: "file", description: "Expanded directory node" },
+  { name: "RiImageLine", component: RiImageLine, category: "file", description: "Media/graphics asset" },
+  { name: "RiVideoLine", component: RiVideoLine, category: "file", description: "Motion video asset" },
+  { name: "RiVolumeUpLine", component: RiVolumeUpLine, category: "file", description: "Audio volume/speaker" },
+  { name: "RiCalendarLine", component: RiCalendarLine, category: "file", description: "Date/scheduler indicator" },
+]
 
 interface ComponentsSectionProps {
   logs: LogMessage[]
@@ -60,6 +177,34 @@ export function ComponentsSection({
   const [checkbox1, setCheckbox1] = useState(true)
   const [checkbox2, setCheckbox2] = useState(false)
   const [selectedRadio, setSelectedRadio] = useState("alpha")
+
+  // Icon Library Explorer state
+  const [iconSearch, setIconSearch] = useState("")
+  const [iconCategory, setIconCategory] = useState<string>("all")
+  const [iconSize, setIconSize] = useState<"sm" | "md" | "lg" | "xl">("md")
+  const [iconColor, setIconColor] = useState<"default" | "primary" | "emerald" | "rose" | "amber" | "blue">("default")
+  const [copiedText, setCopiedText] = useState<string | null>(null)
+
+  const copyToClipboard = (text: string, iconName: string) => {
+    navigator.clipboard.writeText(text).then(
+      () => {
+        setCopiedText(iconName)
+        addLog(`Copied import statement: import { ${iconName} } from "@remixicon/react"`, "SUCCESS")
+        setTimeout(() => setCopiedText(null), 2000)
+      },
+      () => {
+        addLog(`Failed to copy ${iconName} statement.`, "WARN")
+      }
+    )
+  }
+
+  // Filtered icons computation
+  const filteredIcons = ICON_LIST.filter((icon) => {
+    const matchesSearch = icon.name.toLowerCase().includes(iconSearch.toLowerCase()) || 
+      icon.description.toLowerCase().includes(iconSearch.toLowerCase())
+    const matchesCategory = iconCategory === "all" || icon.category === iconCategory
+    return matchesSearch && matchesCategory
+  })
 
   const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault()
@@ -724,6 +869,192 @@ export function ComponentsSection({
               <Skeleton className="h-2 w-full" />
               <Skeleton className="h-2 w-5/6" />
             </div>
+          </div>
+        </div>
+      </TuiContainer>
+
+      {/* PANEL 08: TACTICAL_ICONS */}
+      <TuiContainer
+        label="08_TACTICAL_ICONS"
+        badge={<Badge variant="outline" className="text-[10px] rounded-none py-0 h-4 leading-none">REMIXICON EXPLORER</Badge>}
+      >
+        <div className="text-xs text-muted-foreground mb-4">
+          Tactical Icon Library Explorer &mdash; Frequently used icons categorized, searchable, with interactive scaling, theme colors, and copyable click triggers.
+        </div>
+
+        <div className="flex flex-col gap-4">
+          {/* CONTROL BAR */}
+          <div className="flex flex-col lg:flex-row gap-4 justify-between bg-muted/30 p-3 border border-border">
+            {/* Search Input */}
+            <div className="flex items-center gap-2 flex-1 max-w-md">
+              <span className="text-[10px] font-bold text-muted-foreground uppercase tracking-wider whitespace-nowrap">
+                &gt;_ Search
+              </span>
+              <div className="relative w-full">
+                <Input
+                  placeholder="Filter icons..."
+                  value={iconSearch}
+                  onChange={(e) => {
+                    setIconSearch(e.target.value)
+                    addLog(`Icon search query updated: ${e.target.value}`)
+                  }}
+                  className="pl-7 h-8 text-xs font-mono"
+                />
+                <RiSearchLine className="absolute left-2.5 top-1/2 -translate-y-1/2 size-3.5 text-muted-foreground" />
+              </div>
+            </div>
+
+            {/* Adjustments: Size & Color */}
+            <div className="flex flex-wrap items-center gap-4 text-xs font-mono">
+              {/* Size Select */}
+              <div className="flex items-center gap-1.5">
+                <span className="text-[10px] font-bold text-muted-foreground uppercase tracking-wider">Size</span>
+                <div className="flex border border-border">
+                  {(["sm", "md", "lg", "xl"] as const).map((sz) => (
+                    <button
+                      key={sz}
+                      type="button"
+                      onClick={() => {
+                        setIconSize(sz)
+                        addLog(`Icon Explorer: size adjusted to ${sz.toUpperCase()}`)
+                      }}
+                      className={cn(
+                        "px-2 py-0.5 border-r last:border-r-0 border-border uppercase text-[10px] font-bold hover:bg-muted transition-colors cursor-pointer",
+                        iconSize === sz ? "bg-primary text-primary-foreground hover:bg-primary/95" : "bg-card text-foreground"
+                      )}
+                    >
+                      {sz}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {/* Color Select */}
+              <div className="flex items-center gap-1.5">
+                <span className="text-[10px] font-bold text-muted-foreground uppercase tracking-wider">Color</span>
+                <div className="flex border border-border">
+                  {(["default", "primary", "emerald", "rose", "amber", "blue"] as const).map((col) => (
+                    <button
+                      key={col}
+                      type="button"
+                      onClick={() => {
+                        setIconColor(col)
+                        addLog(`Icon Explorer: color adjusted to ${col.toUpperCase()}`)
+                      }}
+                      className={cn(
+                        "px-2 py-0.5 border-r last:border-r-0 border-border uppercase text-[10px] font-bold hover:bg-muted transition-colors cursor-pointer",
+                        iconColor === col ? "bg-primary text-primary-foreground hover:bg-primary/95" : "bg-card text-foreground"
+                      )}
+                    >
+                      {col}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* CATEGORY TABS */}
+          <div className="flex flex-wrap gap-1.5 border-b border-dashed border-border/80 pb-3">
+            {(["all", "navigation", "action", "communication", "status", "file"] as const).map((cat) => {
+              const count = cat === "all" 
+                ? ICON_LIST.length 
+                : ICON_LIST.filter(i => i.category === cat).length
+              return (
+                <button
+                  key={cat}
+                  type="button"
+                  onClick={() => {
+                    setIconCategory(cat)
+                    addLog(`Icon Explorer: category switched to ${cat.toUpperCase()}`)
+                  }}
+                  className={cn(
+                    "px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider border transition-all cursor-pointer rounded-none",
+                    iconCategory === cat
+                      ? "border-primary bg-primary/10 text-primary"
+                      : "border-border hover:border-foreground/40 text-muted-foreground hover:text-foreground"
+                  )}
+                >
+                  {cat} ({count})
+                </button>
+              )
+            })}
+          </div>
+
+          {/* DYNAMIC INFORMATION BAR */}
+          {copiedText && (
+            <div className="bg-emerald-500/10 border border-emerald-500/50 p-2 text-xs font-mono text-emerald-500 flex items-center gap-2 animate-fadeIn rounded-none">
+              <RiCheckboxCircleLine className="size-4 shrink-0" />
+              <span>COPIED IMPORT: <code className="font-bold underline text-emerald-400">import &#123; {copiedText} &#125; from "@remixicon/react"</code> to clipboard!</span>
+            </div>
+          )}
+
+          {/* ICON GRID */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-2">
+            {filteredIcons.length > 0 ? (
+              filteredIcons.map((icon) => {
+                const IconComponent = icon.component
+                const isCopied = copiedText === icon.name
+                
+                // Dynamic size class
+                const sizeClass = 
+                  iconSize === "sm" ? "size-3.5" :
+                  iconSize === "md" ? "size-5" :
+                  iconSize === "lg" ? "size-7" : "size-10"
+
+                // Dynamic color class
+                const colorClass = 
+                  iconColor === "default" ? "text-foreground" :
+                  iconColor === "primary" ? "text-primary" :
+                  iconColor === "emerald" ? "text-emerald-500" :
+                  iconColor === "rose" ? "text-rose-500" :
+                  iconColor === "amber" ? "text-amber-500" : "text-blue-500"
+
+                return (
+                  <button
+                    key={icon.name}
+                    type="button"
+                    title={`Click to copy: import { ${icon.name} } from "@remixicon/react"`}
+                    onClick={() => copyToClipboard(`import { ${icon.name} } from "@remixicon/react"`, icon.name)}
+                    className={cn(
+                      "flex flex-col items-center justify-center p-3 border rounded-none bg-card/45 hover:bg-card hover:border-primary/80 transition-all group/icon cursor-pointer select-none text-center h-28 relative overflow-hidden",
+                      isCopied ? "border-emerald-500/80 bg-emerald-500/5" : "border-border"
+                    )}
+                  >
+                    {/* Copy Indicator */}
+                    <div className={cn(
+                      "absolute top-1 right-1 transition-opacity duration-200",
+                      isCopied ? "opacity-100" : "opacity-0 group-hover/icon:opacity-40"
+                    )}>
+                      {isCopied ? (
+                        <RiCheckLine className="size-3 text-emerald-500 font-bold" />
+                      ) : (
+                        <RiFileCopyLine className="size-3 text-muted-foreground" />
+                      )}
+                    </div>
+
+                    {/* Icon render container */}
+                    <div className="flex-1 flex items-center justify-center">
+                      <IconComponent className={cn("transition-transform duration-300 group-hover/icon:scale-110", sizeClass, colorClass)} />
+                    </div>
+
+                    {/* Meta info */}
+                    <div className="w-full mt-2">
+                      <div className="font-mono text-[10px] font-bold truncate group-hover/icon:text-primary transition-colors">
+                        {icon.name}
+                      </div>
+                      <div className="text-[8px] text-muted-foreground line-clamp-1 mt-0.5 leading-none">
+                        {icon.description}
+                      </div>
+                    </div>
+                  </button>
+                )
+              })
+            ) : (
+              <div className="col-span-full border border-dashed border-border p-8 text-center text-xs text-muted-foreground font-mono">
+                [NO ICONS FOUND MATCHING SEARCH FILTERS]
+              </div>
+            )}
           </div>
         </div>
       </TuiContainer>
