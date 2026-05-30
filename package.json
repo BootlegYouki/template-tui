@@ -9,7 +9,10 @@
     "lint": "eslint .",
     "format": "prettier --write \"**/*.{ts,tsx}\"",
     "typecheck": "tsc --noEmit",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "rm-template": "node scripts/rm-template.js",
+    "int-template": "node scripts/int-template.js",
+    "init-template": "node scripts/int-template.js"
   },
   "dependencies": {
     "@fontsource-variable/jetbrains-mono": "^5.2.8",

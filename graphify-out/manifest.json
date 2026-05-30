@@ -5,8 +5,8 @@
     "semantic_hash": ""
   },
   "E:\\Github\\template-tui\\package.json": {
-    "mtime": 1780117830.1323397,
-    "ast_hash": "7b267aa4c45063c803ac2bbfa0922bd8",
+    "mtime": 1780119613.467586,
+    "ast_hash": "1241611b3252cce34d6fb41435b1bb64",
     "semantic_hash": ""
   },
   "E:\\Github\\template-tui\\tsconfig.app.json": {
@@ -30,8 +30,8 @@
     "semantic_hash": ""
   },
   "E:\\Github\\template-tui\\src\\App.tsx": {
-    "mtime": 1780118786.1239848,
-    "ast_hash": "42e609b2549086eb4aeddfd0ad5ad9aa",
+    "mtime": 1780119617.1762116,
+    "ast_hash": "fb87e831ebc0925ec04ba2aab46c4606",
     "semantic_hash": ""
   },
   "E:\\Github\\template-tui\\src\\main.tsx": {
@@ -42,26 +42,6 @@
   "E:\\Github\\template-tui\\src\\components\\theme-provider.tsx": {
     "mtime": 1780073095.882,
     "ast_hash": "bb764a9e2cdc12b435aa85ccee797580",
-    "semantic_hash": ""
-  },
-  "E:\\Github\\template-tui\\src\\components\\tui-template\\components-section.tsx": {
-    "mtime": 1780118027.029539,
-    "ast_hash": "8e6b6ca27dc464e94aa1ed3f622dc2e6",
-    "semantic_hash": ""
-  },
-  "E:\\Github\\template-tui\\src\\components\\tui-template\\style-section.tsx": {
-    "mtime": 1780115195.6326697,
-    "ast_hash": "9df281883804535cd94e66ec3bf12154",
-    "semantic_hash": ""
-  },
-  "E:\\Github\\template-tui\\src\\components\\tui-template\\tactical-widgets.tsx": {
-    "mtime": 1780116634.3172224,
-    "ast_hash": "19ee81404d140619e762f58572e8430a",
-    "semantic_hash": ""
-  },
-  "E:\\Github\\template-tui\\src\\components\\tui-template\\telemetry-section.tsx": {
-    "mtime": 1780115971.3339415,
-    "ast_hash": "6dd3e21e0d99cf0597bd96a82e5371de",
     "semantic_hash": ""
   },
   "E:\\Github\\template-tui\\src\\components\\ui\\avatar.tsx": {
@@ -184,9 +164,39 @@
     "ast_hash": "637776aa6f7496d069afe7520c845c8a",
     "semantic_hash": ""
   },
+  "E:\\Github\\template-tui\\scripts\\rm-template.js": {
+    "mtime": 1780119550.5222192,
+    "ast_hash": "3a691de49fa5334eb7ad36d62fd979e9",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\template-tui\\scripts\\int-template.js": {
+    "mtime": 1780119610.4492607,
+    "ast_hash": "040a63acc072fd5b2b43b77a37074790",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\template-tui\\src\\components\\tui-template\\components-section.tsx": {
+    "mtime": 1780119617.1772876,
+    "ast_hash": "8e6b6ca27dc464e94aa1ed3f622dc2e6",
+    "semantic_hash": ""
+  },
   "E:\\Github\\template-tui\\src\\components\\tui-template\\showcase.tsx": {
-    "mtime": 1780118872.734006,
-    "ast_hash": "b2d3d0f6aad55000b3ac2f73f089e5e6",
+    "mtime": 1780119617.17833,
+    "ast_hash": "254b5dd7a94b1f33551f1746e33eeed9",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\template-tui\\src\\components\\tui-template\\style-section.tsx": {
+    "mtime": 1780119617.1788473,
+    "ast_hash": "ca85489f20586316a12e7a096727df7e",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\template-tui\\src\\components\\tui-template\\tactical-widgets.tsx": {
+    "mtime": 1780119617.1798902,
+    "ast_hash": "2b25a2608e73164336bfd308bdc79d17",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\template-tui\\src\\components\\tui-template\\telemetry-section.tsx": {
+    "mtime": 1780119617.1809318,
+    "ast_hash": "880185617cd0224059c2623eae121873",
     "semantic_hash": ""
   }
 }
