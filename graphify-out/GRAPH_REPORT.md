@@ -1,16 +1,16 @@
 # Graph Report - template-tui  (2026-05-30)
 
 ## Corpus Check
-- 36 files · ~16,497 words
+- 36 files · ~16,885 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 274 nodes · 504 edges · 20 communities (18 shown, 2 thin omitted)
+- 279 nodes · 509 edges · 16 communities (14 shown, 2 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `f7373c53`
+- Built from commit: `d63b6f2f`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -29,11 +29,7 @@
 - [[_COMMUNITY_Community 11|Community 11]]
 - [[_COMMUNITY_Community 12|Community 12]]
 - [[_COMMUNITY_Community 13|Community 13]]
-- [[_COMMUNITY_Community 15|Community 15]]
 - [[_COMMUNITY_Community 16|Community 16]]
-- [[_COMMUNITY_Community 17|Community 17]]
-- [[_COMMUNITY_Community 18|Community 18]]
-- [[_COMMUNITY_Community 19|Community 19]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `cn()` - 81 edges
@@ -50,32 +46,32 @@
 ## Surprising Connections (you probably didn't know these)
 - `BrutalistSlider()` --calls--> `cn()`  [EXTRACTED]
   src/components/tui-template/tactical-widgets.tsx → src/lib/utils.ts
-- `DropdownMenuCheckboxItem()` --calls--> `cn()`  [EXTRACTED]
-  src/components/ui/dropdown-menu.tsx → src/lib/utils.ts
-- `DropdownMenuRadioItem()` --calls--> `cn()`  [EXTRACTED]
-  src/components/ui/dropdown-menu.tsx → src/lib/utils.ts
-- `DropdownMenuShortcut()` --calls--> `cn()`  [EXTRACTED]
-  src/components/ui/dropdown-menu.tsx → src/lib/utils.ts
-- `DropdownMenuSubTrigger()` --calls--> `cn()`  [EXTRACTED]
-  src/components/ui/dropdown-menu.tsx → src/lib/utils.ts
+- `SelectGroup()` --calls--> `cn()`  [EXTRACTED]
+  src/components/ui/select.tsx → src/lib/utils.ts
+- `SelectLabel()` --calls--> `cn()`  [EXTRACTED]
+  src/components/ui/select.tsx → src/lib/utils.ts
+- `SelectSeparator()` --calls--> `cn()`  [EXTRACTED]
+  src/components/ui/select.tsx → src/lib/utils.ts
+- `SelectScrollUpButton()` --calls--> `cn()`  [EXTRACTED]
+  src/components/ui/select.tsx → src/lib/utils.ts
 
-## Communities (20 total, 2 thin omitted)
+## Communities (16 total, 2 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.18
-Nodes (14): ComponentsSectionProps, ICON_LIST, IconItem, Dialog(), DialogClose(), DialogContent(), DialogDescription(), DialogFooter() (+6 more)
+Cohesion: 0.07
+Nodes (51): cn(), ComponentsSectionProps, ICON_LIST, IconItem, Avatar(), AvatarBadge(), AvatarFallback(), AvatarGroup() (+43 more)
 
 ### Community 1 - "Community 1"
 Cohesion: 0.12
-Nodes (17): latencyData, processData, radarData, TelemetrySectionProps, weeklyData, Button(), buttonVariants, ChartConfig (+9 more)
+Nodes (17): latencyData, processData, radarData, TelemetrySectionProps, weeklyData, ChartConfig, ChartContainer(), ChartContext (+9 more)
 
 ### Community 2 - "Community 2"
-Cohesion: 0.18
-Nodes (19): useTheme(), App(), telemetryBaseline, ComponentsSection(), LogMessage, telemetryBaseline, TuiShowcase(), StyleSection() (+11 more)
+Cohesion: 0.20
+Nodes (18): useTheme(), App(), telemetryBaseline, ComponentsSection(), LogMessage, telemetryBaseline, TuiShowcase(), StyleSection() (+10 more)
 
 ### Community 3 - "Community 3"
-Cohesion: 0.14
-Nodes (16): BrutalistSlider(), BrutalistSliderProps, LogMessage, TacticalWidgetsProps, Select(), SelectContent(), SelectGroup(), SelectItem() (+8 more)
+Cohesion: 0.13
+Nodes (18): BrutalistSlider(), BrutalistSliderProps, LogMessage, TacticalWidgetsProps, Input(), Label(), Select(), SelectContent() (+10 more)
 
 ### Community 4 - "Community 4"
 Cohesion: 0.13
@@ -106,48 +102,32 @@ Cohesion: 0.33
 Nodes (5): compilerOptions, paths, files, @/*, references
 
 ### Community 11 - "Community 11"
-Cohesion: 0.50
-Nodes (3): Adding components, React + TypeScript + Vite + shadcn/ui, Using components
-
-### Community 15 - "Community 15"
-Cohesion: 0.18
-Nodes (8): Sheet(), SheetContent(), SheetDescription(), SheetFooter(), SheetHeader(), SheetOverlay(), SheetTitle(), SheetTrigger()
+Cohesion: 0.22
+Nodes (8): Adding components, 🧹 How to Clean the Template (Start Fresh), 🚀 Key Features, 🧠 maintaining the Graphify Knowledge Graph, 🛠️ Quick Start, React + TypeScript + Vite + shadcn/ui, 📟 template-tui — Retro-Brutalist TUI Design System, Using components
 
 ### Community 16 - "Community 16"
 Cohesion: 0.17
 Nodes (7): ResolvedTheme, Theme, THEME_VALUES, ThemeProvider(), ThemeProviderContext, ThemeProviderProps, ThemeProviderState
 
-### Community 17 - "Community 17"
-Cohesion: 0.21
-Nodes (15): cn(), Avatar(), AvatarBadge(), AvatarFallback(), AvatarGroup(), AvatarGroupCount(), AvatarImage(), Card() (+7 more)
-
-### Community 18 - "Community 18"
-Cohesion: 0.12
-Nodes (11): DropdownMenu(), DropdownMenuCheckboxItem(), DropdownMenuContent(), DropdownMenuItem(), DropdownMenuLabel(), DropdownMenuRadioItem(), DropdownMenuSeparator(), DropdownMenuShortcut() (+3 more)
-
-### Community 19 - "Community 19"
-Cohesion: 0.22
-Nodes (4): Input(), Label(), Skeleton(), Textarea()
-
 ## Knowledge Gaps
-- **126 isolated node(s):** `$schema`, `style`, `rsc`, `tsx`, `config` (+121 more)
+- **130 isolated node(s):** `$schema`, `style`, `rsc`, `tsx`, `config` (+125 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `cn()` connect `Community 17` to `Community 0`, `Community 1`, `Community 2`, `Community 3`, `Community 15`, `Community 18`, `Community 19`?**
-  _High betweenness centrality (0.123) - this node is a cross-community bridge._
+- **Why does `cn()` connect `Community 0` to `Community 1`, `Community 2`, `Community 3`?**
+  _High betweenness centrality (0.119) - this node is a cross-community bridge._
 - **Why does `devDependencies` connect `Community 4` to `Community 8`?**
   _High betweenness centrality (0.012) - this node is a cross-community bridge._
 - **What connects `$schema`, `style`, `rsc` to the rest of the system?**
-  _126 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _130 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `Community 0` be split into smaller, more focused modules?**
+  _Cohesion score 0.06784260515603799 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
-  _Cohesion score 0.12121212121212122 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.11688311688311688 - nodes in this community are weakly interconnected._
 - **Should `Community 3` be split into smaller, more focused modules?**
-  _Cohesion score 0.14035087719298245 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.12666666666666668 - nodes in this community are weakly interconnected._
 - **Should `Community 4` be split into smaller, more focused modules?**
   _Cohesion score 0.13333333333333333 - nodes in this community are weakly interconnected._
-- **Should `Community 5` be split into smaller, more focused modules?**
-  _Cohesion score 0.09090909090909091 - nodes in this community are weakly interconnected._
