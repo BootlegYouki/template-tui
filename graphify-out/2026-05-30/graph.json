@@ -1296,7 +1296,7 @@
       "source_file": "src/components/tui-template/components-section.tsx",
       "source_location": "L84",
       "id": "tui_template_components_section_logmessage",
-      "community": 1,
+      "community": 9,
       "norm_label": "logmessage"
     },
     {
@@ -1593,7 +1593,7 @@
       "source_file": "src/components/ui/button.tsx",
       "source_location": "L1",
       "id": "src_components_ui_button_tsx",
-      "community": 1,
+      "community": 5,
       "norm_label": "button.tsx"
     },
     {
@@ -1602,7 +1602,7 @@
       "source_file": "src/components/ui/button.tsx",
       "source_location": "L7",
       "id": "ui_button_buttonvariants",
-      "community": 1,
+      "community": 5,
       "norm_label": "buttonvariants"
     },
     {
@@ -1611,7 +1611,7 @@
       "source_file": "src/components/ui/button.tsx",
       "source_location": "L42",
       "id": "ui_button_button",
-      "community": 1,
+      "community": 5,
       "norm_label": "button()"
     },
     {
@@ -2187,7 +2187,7 @@
       "source_file": "src/components/ui/separator.tsx",
       "source_location": "L1",
       "id": "src_components_ui_separator_tsx",
-      "community": 0,
+      "community": 1,
       "norm_label": "separator.tsx"
     },
     {
@@ -2196,7 +2196,7 @@
       "source_file": "src/components/ui/separator.tsx",
       "source_location": "L6",
       "id": "ui_separator_separator",
-      "community": 0,
+      "community": 1,
       "norm_label": "separator()"
     },
     {
@@ -2394,7 +2394,7 @@
       "source_file": "src/components/ui/tooltip.tsx",
       "source_location": "L1",
       "id": "src_components_ui_tooltip_tsx",
-      "community": 9,
+      "community": 1,
       "norm_label": "tooltip.tsx"
     },
     {
@@ -2439,7 +2439,7 @@
       "source_file": "src/components/ui/tui-container.tsx",
       "source_location": "L1",
       "id": "src_components_ui_tui_container_tsx",
-      "community": 5,
+      "community": 0,
       "norm_label": "tui-container.tsx"
     },
     {
@@ -2448,7 +2448,7 @@
       "source_file": "src/components/ui/tui-container.tsx",
       "source_location": "L4",
       "id": "ui_tui_container_tuicontainerprops",
-      "community": 5,
+      "community": 0,
       "norm_label": "tuicontainerprops"
     },
     {
@@ -2551,19 +2551,10 @@
       "norm_label": "\ud83d\udcdf template-tui \u2014 retro-brutalist tui design system"
     },
     {
-      "label": "\ud83d\udcf8 Visual Showcase",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "L9",
-      "id": "template_tui_readme_visual_showcase",
-      "community": 10,
-      "norm_label": "\ud83d\udcf8 visual showcase"
-    },
-    {
       "label": "\ud83d\ude80 Key Features",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L38",
+      "source_location": "L9",
       "id": "template_tui_readme_key_features",
       "community": 10,
       "norm_label": "\ud83d\ude80 key features"
@@ -2572,7 +2563,7 @@
       "label": "\ud83d\udee0\ufe0f Quick Start",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L50",
+      "source_location": "L21",
       "id": "template_tui_readme_quick_start",
       "community": 10,
       "norm_label": "\ud83d\udee0\ufe0f quick start"
@@ -2581,7 +2572,7 @@
       "label": "\ud83e\uddf9 Template Management (Cleanup & Restore)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L67",
+      "source_location": "L38",
       "id": "template_tui_readme_template_management_cleanup_restore",
       "community": 10,
       "norm_label": "\ud83e\uddf9 template management (cleanup & restore)"
@@ -2590,7 +2581,7 @@
       "label": "\ud83e\uddfc Clean the Template (Start Fresh)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L71",
+      "source_location": "L42",
       "id": "template_tui_readme_clean_the_template_start_fresh",
       "community": 10,
       "norm_label": "\ud83e\uddfc clean the template (start fresh)"
@@ -2599,7 +2590,7 @@
       "label": "\ud83d\udcdf Restore/Initialize the Template",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L77",
+      "source_location": "L48",
       "id": "template_tui_readme_restore_initialize_the_template",
       "community": 10,
       "norm_label": "\ud83d\udcdf restore/initialize the template"
@@ -2608,7 +2599,7 @@
       "label": "\ud83e\udde0 maintaining the Graphify Knowledge Graph",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L86",
+      "source_location": "L57",
       "id": "template_tui_readme_maintaining_the_graphify_knowledge_graph",
       "community": 10,
       "norm_label": "\ud83e\udde0 maintaining the graphify knowledge graph"
@@ -2768,7 +2759,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 0,
       "norm_label": "tuicontainer",
       "id": "readme_tuicontainer"
     },
@@ -9628,16 +9619,6 @@
       "confidence_score": 1.0,
       "source": "template_tui_readme_template_tui_retro_brutalist_tui_design_system",
       "target": "template_tui_readme_template_management_cleanup_restore"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "README.md",
-      "source_location": "L9",
-      "weight": 1.0,
-      "source": "template_tui_readme_template_tui_retro_brutalist_tui_design_system",
-      "target": "template_tui_readme_visual_showcase",
-      "confidence_score": 1.0
     },
     {
       "relation": "contains",

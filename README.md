@@ -6,6 +6,35 @@ Powered by **React 19**, **Vite 8**, **Tailwind CSS v4**, **Radix UI**, and **Sh
 
 ---
 
+## 📸 Visual Showcase
+
+<div align="center">
+  <table border="0">
+    <tr>
+      <td width="50%" align="center">
+        <img src="src/components/tui-template/assets/01.png" alt="Retro-Brutalist Theme Styles" width="100%"/>
+        <br/><em>Theme Styles & Color Accents</em>
+      </td>
+      <td width="50%" align="center">
+        <img src="src/components/tui-template/assets/02.png" alt="TUI Showcase Interface" width="100%"/>
+        <br/><em>Design System Showcase Overview</em>
+      </td>
+    </tr>
+    <tr>
+      <td width="50%" align="center">
+        <img src="src/components/tui-template/assets/03.png" alt="System Telemetry & Performance Charts" width="100%"/>
+        <br/><em>System Telemetry & Charts</em>
+      </td>
+      <td width="50%" align="center">
+        <img src="src/components/tui-template/assets/04.png" alt="Tactical Operational Widgets" width="100%"/>
+        <br/><em>Tactical Widgets & Inputs</em>
+      </td>
+    </tr>
+  </table>
+</div>
+
+---
+
 ## 🚀 Key Features
 
 *   📟 **Brutalist Grid Layouts**: Integrated `<TuiContainer>` panels rendering geometric fieldset borders, legend headers, and tactical layout alignments.

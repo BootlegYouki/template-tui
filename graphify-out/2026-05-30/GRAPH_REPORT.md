@@ -1,11 +1,11 @@
 # Graph Report - template-tui  (2026-05-30)
 
 ## Corpus Check
-- 38 files · ~17,432 words
+- 38 files · ~17,356 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 311 nodes · 658 edges · 18 communities (14 shown, 4 thin omitted)
+- 310 nodes · 657 edges · 18 communities (14 shown, 4 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.9)
 - Token cost: 0 input · 0 output
 
@@ -60,12 +60,12 @@
 ## Communities (18 total, 4 thin omitted)
 
 ### Community 0 - "Tactical UI Components Forge"
-Cohesion: 0.16
-Nodes (27): cn(), BrutalistSlider(), BrutalistSliderProps, LogMessage, TacticalWidgets(), TacticalWidgetsProps, Avatar(), AvatarBadge() (+19 more)
+Cohesion: 0.15
+Nodes (28): cn(), TuiContainer, BrutalistSlider(), BrutalistSliderProps, LogMessage, TacticalWidgets(), TacticalWidgetsProps, Avatar() (+20 more)
 
 ### Community 1 - "Vivid TUI Components Hub"
-Cohesion: 0.11
-Nodes (21): ResolvedTheme, Theme, THEME_VALUES, ThemeProvider(), ThemeProviderContext, ThemeProviderProps, ThemeProviderState, useTheme() (+13 more)
+Cohesion: 0.12
+Nodes (19): ResolvedTheme, Theme, THEME_VALUES, ThemeProvider(), ThemeProviderContext, ThemeProviderProps, ThemeProviderState, useTheme() (+11 more)
 
 ### Community 2 - "Community 2"
 Cohesion: 0.23
@@ -81,7 +81,7 @@ Nodes (21): compilerOptions, allowImportingTsExtensions, erasableSyntaxOnly, jsx
 
 ### Community 5 - "Data Pulse Hub"
 Cohesion: 0.13
-Nodes (22): TuiContainer, StyleSection(), latencyData, processData, radarData, TelemetrySection(), TelemetrySectionProps, weeklyData (+14 more)
+Nodes (22): StyleSection(), latencyData, processData, radarData, TelemetrySection(), TelemetrySectionProps, weeklyData, Badge() (+14 more)
 
 ### Community 6 - "Community 6"
 Cohesion: 0.09
@@ -97,11 +97,11 @@ Nodes (17): compilerOptions, allowImportingTsExtensions, erasableSyntaxOnly, lib
 
 ### Community 9 - "Terminal UI Collective"
 Cohesion: 0.12
-Nodes (31): ComponentsSection(), ComponentsSectionProps, ICON_LIST, IconItem, Card(), CardAction(), CardContent(), CardDescription() (+23 more)
+Nodes (32): ComponentsSection(), ComponentsSectionProps, ICON_LIST, IconItem, LogMessage, Card(), CardAction(), CardContent() (+24 more)
 
 ### Community 10 - "Community 10"
-Cohesion: 0.15
-Nodes (12): Adding components, 🧼 Clean the Template (Start Fresh), 🧹 How to Clean the Template (Start Fresh), 🚀 Key Features, 🧠 maintaining the Graphify Knowledge Graph, 🛠️ Quick Start, React + TypeScript + Vite + shadcn/ui, 📟 Restore/Initialize the Template (+4 more)
+Cohesion: 0.17
+Nodes (11): Adding components, 🧼 Clean the Template (Start Fresh), 🧹 How to Clean the Template (Start Fresh), 🚀 Key Features, 🧠 maintaining the Graphify Knowledge Graph, 🛠️ Quick Start, React + TypeScript + Vite + shadcn/ui, 📟 Restore/Initialize the Template (+3 more)
 
 ### Community 11 - "Community 11"
 Cohesion: 0.18
@@ -112,7 +112,7 @@ Cohesion: 0.33
 Nodes (5): compilerOptions, paths, files, @/*, references
 
 ## Knowledge Gaps
-- **138 isolated node(s):** `$schema`, `style`, `rsc`, `tsx`, `config` (+133 more)
+- **137 isolated node(s):** `$schema`, `style`, `rsc`, `tsx`, `config` (+132 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **4 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -123,12 +123,12 @@ _Questions this graph is uniquely positioned to answer:_
   _High betweenness centrality (0.107) - this node is a cross-community bridge._
 - **Why does `ComponentsSection()` connect `Terminal UI Collective` to `Tactical UI Components Forge`, `Vivid TUI Components Hub`, `Community 2`, `Data Pulse Hub`?**
   _High betweenness centrality (0.044) - this node is a cross-community bridge._
-- **Why does `TuiContainer` connect `Data Pulse Hub` to `Tactical UI Components Forge`, `Terminal UI Collective`, `Community 11`?**
-  _High betweenness centrality (0.043) - this node is a cross-community bridge._
+- **Why does `TuiContainer` connect `Tactical UI Components Forge` to `Terminal UI Collective`, `Community 11`, `Data Pulse Hub`?**
+  _High betweenness centrality (0.044) - this node is a cross-community bridge._
 - **What connects `$schema`, `style`, `rsc` to the rest of the system?**
-  _141 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _140 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Vivid TUI Components Hub` be split into smaller, more focused modules?**
-  _Cohesion score 0.11397849462365592 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.12183908045977011 - nodes in this community are weakly interconnected._
 - **Should `Community 3` be split into smaller, more focused modules?**
   _Cohesion score 0.09090909090909091 - nodes in this community are weakly interconnected._
 - **Should `Community 4` be split into smaller, more focused modules?**
