@@ -10,6 +10,7 @@ import { TooltipProvider } from "@/components/ui/tooltip"
 import { StyleSection } from "@/components/tui-template/style-section"
 import { ComponentsSection, type LogMessage } from "@/components/tui-template/components-section"
 import { TelemetrySection } from "@/components/tui-template/telemetry-section"
+import { TacticalWidgets } from "@/components/tui-template/tactical-widgets"
 
 import {
   RiTerminalBoxLine,
@@ -147,7 +148,7 @@ export function App() {
         <header className="border-b border-border bg-card/50 backdrop-blur-md sticky top-0 z-40">
           <div className="max-w-7xl mx-auto px-4 py-2 flex flex-wrap items-center justify-between gap-4 text-xs">
             <div className="flex items-center gap-2.5">
-              <RiTerminalBoxLine className="size-4 text-primary animate-pulse" />
+              <RiTerminalBoxLine className="size-4 text-primary animate-pulse translate-y-[-0.5px] shrink-0" />
               <span className="font-bold tracking-wider text-foreground">TEMPLATE-TUI</span>
               <Separator orientation="vertical" className="h-3 bg-border" />
               <span className="text-muted-foreground flex items-center gap-1.5">
@@ -239,6 +240,9 @@ export function App() {
                 <TabsTrigger value="telemetry" className="flex-1 py-1.5 font-bold tracking-wider uppercase">
                   03_SYSTEM_TELEMETRY
                 </TabsTrigger>
+                <TabsTrigger value="widgets" className="flex-1 py-1.5 font-bold tracking-wider uppercase">
+                  04_TACTICAL_WIDGETS
+                </TabsTrigger>
               </TabsList>
 
               {/* TAB 1: TYPOGRAPHY & COLOR PALETTE */}
@@ -265,6 +269,11 @@ export function App() {
                   handleSimulateNetworkBurst={handleSimulateNetworkBurst}
                   handleResetTelemetry={handleResetTelemetry}
                 />
+              </TabsContent>
+
+              {/* TAB 4: TACTICAL DASHBOARD WIDGETS */}
+              <TabsContent value="widgets" className="outline-none">
+                <TacticalWidgets addLog={addLog} />
               </TabsContent>
             </Tabs>
           </div>

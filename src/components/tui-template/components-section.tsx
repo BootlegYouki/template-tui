@@ -164,9 +164,16 @@ export function ComponentsSection({
                     addLog(`Checkbox 01 changed: ${!checkbox1}`)
                   }}
                 >
-                  <span className="font-mono text-primary font-bold text-sm">
-                    {checkbox1 ? "[x]" : "[ ]"}
-                  </span>
+                  <div className={cn(
+                    "size-4 border border-foreground bg-background flex items-center justify-center shrink-0 transition-colors duration-150 rounded-none",
+                    checkbox1 ? "bg-foreground text-background" : "border-foreground/60"
+                  )}>
+                    {checkbox1 && (
+                      <svg className="size-3 fill-none stroke-current" viewBox="0 0 24 24" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round">
+                        <polyline points="20 6 9 17 4 12" />
+                      </svg>
+                    )}
+                  </div>
                   <span className="text-[11px] tracking-wide uppercase">Secure Mode SSL</span>
                 </button>
                 
@@ -178,9 +185,16 @@ export function ComponentsSection({
                     addLog(`Checkbox 02 changed: ${!checkbox2}`)
                   }}
                 >
-                  <span className="font-mono text-primary font-bold text-sm">
-                    {checkbox2 ? "[x]" : "[ ]"}
-                  </span>
+                  <div className={cn(
+                    "size-4 border border-foreground bg-background flex items-center justify-center shrink-0 transition-colors duration-150 rounded-none",
+                    checkbox2 ? "bg-foreground text-background" : "border-foreground/60"
+                  )}>
+                    {checkbox2 && (
+                      <svg className="size-3 fill-none stroke-current" viewBox="0 0 24 24" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round">
+                        <polyline points="20 6 9 17 4 12" />
+                      </svg>
+                    )}
+                  </div>
                   <span className="text-[11px] tracking-wide uppercase">Allow Remote Sync</span>
                 </button>
               </div>
@@ -202,9 +216,14 @@ export function ComponentsSection({
                       addLog(`Radio Group selected: ${opt.toUpperCase()}`)
                     }}
                   >
-                    <span className="font-mono text-primary font-bold text-sm">
-                      {selectedRadio === opt ? "(*)" : "( )"}
-                    </span>
+                    <div className={cn(
+                      "size-4 border border-foreground bg-background flex items-center justify-center shrink-0 transition-colors duration-150 rounded-none",
+                      selectedRadio === opt ? "border-foreground" : "border-foreground/60"
+                    )}>
+                      {selectedRadio === opt && (
+                        <div className="size-2 bg-foreground rounded-none"></div>
+                      )}
+                    </div>
                     <span className="text-[11px] tracking-wide uppercase">Node_{opt}</span>
                   </button>
                 ))}
@@ -461,7 +480,7 @@ export function ComponentsSection({
             <DialogContent className="border border-primary/50 rounded-none">
               <DialogHeader>
                 <DialogTitle className="uppercase text-xs font-bold tracking-wider text-primary flex items-center gap-1.5">
-                  <RiErrorWarningLine className="size-4 text-rose-500 animate-pulse" />
+                  <RiErrorWarningLine className="size-4 text-rose-500 animate-pulse translate-y-[-0.5px] shrink-0" />
                   SYS_ALERT: SYSTEM REBOOT REQUESTED
                 </DialogTitle>
                 <DialogDescription className="text-xs pt-1">
@@ -497,7 +516,7 @@ export function ComponentsSection({
             <SheetContent className="w-full sm:max-w-md border-l-2 border-primary/50 rounded-none">
               <SheetHeader>
                 <SheetTitle className="uppercase text-xs font-bold tracking-wider text-primary flex items-center gap-1.5">
-                  <RiTv2Line className="size-4 text-primary" />
+                  <RiTv2Line className="size-4 text-primary translate-y-[-0.5px] shrink-0" />
                   Console Log Stream Viewer
                 </SheetTitle>
                 <SheetDescription className="text-xs">
@@ -587,7 +606,7 @@ export function ComponentsSection({
           <Card className="border border-border rounded-none shadow-none bg-card/45">
             <CardHeader className="border-b border-border/50 pb-3">
               <CardTitle className="text-sm font-bold uppercase tracking-wider text-primary flex items-center gap-1.5">
-                <RiTerminalBoxLine className="size-4" /> HOST_RESOURCES_01
+                <RiTerminalBoxLine className="size-4 translate-y-[-0.5px] shrink-0" /> HOST_RESOURCES_01
               </CardTitle>
               <CardDescription className="text-[10px]">
                 Raw virtual hardware properties for static matrix host.
@@ -617,7 +636,7 @@ export function ComponentsSection({
           <Card className="border border-border rounded-none shadow-none bg-card/45">
             <CardHeader className="border-b border-border/50 pb-3">
               <CardTitle className="text-sm font-bold uppercase tracking-wider text-primary flex items-center gap-1.5">
-                <RiFolderShieldLine className="size-4" /> SECURITY_PROFILE
+                <RiFolderShieldLine className="size-4 translate-y-[-0.5px] shrink-0" /> SECURITY_PROFILE
               </CardTitle>
               <CardDescription className="text-[10px]">
                 Clearance logs and security posture configurations.
