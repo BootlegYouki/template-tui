@@ -276,15 +276,12 @@ export function TuiShowcase() {
           <div className="max-w-7xl mx-auto px-4 py-8">
             <div className="flex flex-col gap-2 max-w-3xl">
               <div className="flex items-center gap-2">
-                <Badge variant="outline" className="border-primary/50 text-primary uppercase font-bold text-[10px]">
-                  Kitchen Sink
-                </Badge>
                 <Badge variant="secondary" className="text-[10px]">
                   RADIX-UI + SHADCN
                 </Badge>
               </div>
               <h1 className="text-3xl font-extrabold tracking-tight uppercase">
-                System Interface Design Showcase
+                BootlegYouki's TUI style design system
               </h1>
               <p className="text-sm text-muted-foreground leading-relaxed mt-1">
                 Explore the complete design language of your custom <span className="font-semibold text-foreground">buG04wd</span> theme preset.
